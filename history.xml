@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE history [
+    <!ELEMENT history (etap*)>
+    <!ELEMENT etap (name,text,img)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT text (#PCDATA)>
+    <!ELEMENT img (#PCDATA)>
+]>
+<history>
+  <etap>
+    <name>I этап – первый запуск космического аппарата</name>
+    <text></text>
+    <img></img>
+  </etap>
+  <etap>
+    <name>II этап – первые живые существа на орбите</name>
+    <text></text>
+    <img></img>
+  </etap>
+  <etap>
+    <name>III этап – выход человека в космос</name>
+    <text></text>
+    <img></img>
+  </etap>
+  <etap>
+    <name>IV этап – первая высадка на Луну</name>
+    <text></text>
+    <img></img>
+  </etap>
+  <etap>
+    <name>V этап – исследование планет Солнечной системы</name>
+    <text></text>
+    <img></img>
+  </etap>
+  <etap>
+    <name>VI этап – человечество выходит за пределы Солнечной системы</name>
+    <text></text>
+    <img></img>
+  </etap>
+  <etap>
+    <name>VII этап –  начало международного комплексного изучение космоса</name>
+    <text></text>
+    <img></img>
+  </etap>
+  <etap>
+    <name>VIII этап – начало работы МКС (Международной космической станции)</name>
+    <text></text>
+    <img></img>
+  </etap>
+  <etap>
+    <name>IX-этап –интенсивное исследование и коммерциализация космоса</name>
+    <text></text>
+    <img></img>
+  </etap>
+</history>
