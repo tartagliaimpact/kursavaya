@@ -107,7 +107,7 @@ body {
     color: rgb(112, 157, 206);
   }
   
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     h1, h2, h3, h4, h5, h6, p {
       margin-top: 0;
       color: $wcol;
@@ -128,7 +128,7 @@ body {
     width: 750px;
   }
   
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     .image {
       height: 211px;
       width: 375px;
