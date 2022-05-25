@@ -91,7 +91,7 @@ body {
 
 
   
-  @media(max-width:800px) {
+  @media(max-width:1200px) {
     .top-menu li {
       width: 100%;
       height: auto!important;
