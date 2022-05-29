@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+            <link rel="stylesheet" href="sitestyle.css">
+            <link rel="stylesheet" href="skeleton.css">
+            <link rel="stylesheet" href="normalize.css">
+             <script type="text/javascript" src="jquery-3.6.0.js"></script>
+            <script type="text/javascript" src="jquery-3.6.0.js"></script>
+            <script type="text/javascript" src="jquery-git.min.js"></script>
+            <script type="text/javascript" src="mainscript.js"></script>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script language="javascript">
+
+
+$(document).ready(function () {
+    $.ajax({
+        type: "GET",
+        url: "https://raw.githubusercontent.com/tartagliaimpact/kursavaya/main/history.xml",
+        dataType: "xml",
+        success: xmlParser
+    });
+});
+function xmlParser(xml) {
+  $('#load').fadeOut();
+    $(xml).find("etap").each(function () {
+        $(".main").append('</br><h2 class="name">' + $(this).find("name").text() + '</h2><p class="text">' + $(this).find("text").text() + '</p><div><img src="' + $(this).find("img").text() + '"/ height="422px" width="750px" class="image" img></div>');
+        $(".etap").fadeIn(1000);
+
+    });
+  }
+</script>
+    </head>   
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+  <header>
+    <div>
+    <div class="head"><img src="logo.svg" width="200px" height="200px" /></div>
+    <div>
+        <h1 class="sitename">Космические исследовательские миссии</h1>
+        <p class="sitenamep">Архив космических миссий</p>
+    </div>
+    </div>
+</header>
+
+    <div class="fone">
+
+      <nav class="container">
+        <div class="topnav" id="myTopnav">
+          <a href="Main.html" class="active">Главная</a>
+  
+          <div class="dropdown">
+            <button class="dropbtn">СССР
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Sputnik.html">«Спутник»</a>
+              <a href="Lunohod.html">«Луноход»</a>
+              <a href="Venera.html">«Венера»</a>
+              <a href="Mars.html">«Марс»</a>
+            </div>
+          </div>
+  
+          <div class="dropdown">
+            <button class="dropbtn">США
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Mariner.html">"Mariner"</a>
+              <a href="Cassini–Huygens.html">"Cassini–Huygens"</a>
+              <a href="Voyager.html">"Voyager"</a>
+            </div>
+          </div>
+  
+          <div class="dropdown">
+            <button class="dropbtn">Китай
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Chane2.html">"Чанъэ-2"</a>
+              <a href="Tyanven.html">"Тяньвэнь-1"</a>
+            </div>
+          </div>
+          <a href="History.html">История освоения космоса</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      </nav>
+
+          <div class="main"></div>
+    </div>
+    <div id="gt"><img src="144-1441665_rocket-icon-rocket-i-removebg-preview-PhotoRoom-removebg-preview.svg"  height=80px width=80px /></div>
+    <footer>
+      <div style="float: left; padding-top: 2%; padding-bottom: 2%;" ><ul style="font-size: 35px">Контакты:</ul>
+        <ul>
+          <li>VK: <a href="https://vk.com/f1.yosomono">Yosomono</a></li>
+          <li>Git Hub: <a href="https://github.com/tartagliaimpact">TartagliaImpact</a></li>
+        </ul>
+      </div>
+    </footer>
+</body>
+</html>
