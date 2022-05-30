@@ -152,7 +152,7 @@ img {
   .sitename {
     font-size: 4em;
     margin-bottom: 0;
-    text-align: center; }
+    text-align: left; }
 
   h1, h2, h3, h4, h5, h6 {
     font-size: 3em;
