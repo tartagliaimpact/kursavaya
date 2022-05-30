@@ -150,7 +150,7 @@ img {
     height: 400px; } }
 @media screen and (max-width: 1500px) {
   .sitename {
-    font-size: 6em;
+    font-size: 4em;
     margin-bottom: 0;
     text-align: center; }
 
